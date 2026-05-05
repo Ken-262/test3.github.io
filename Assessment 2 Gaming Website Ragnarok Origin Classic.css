@@ -1,0 +1,418 @@
+
+/* These are all the CSS Designs that I used for my website.*/
+
+/* These are the fonts that I used for h1 and h2. Font-face is defined to use another fonts instead of the pre-made ones.
+It can also be directly taken from the website or embed the actual code for it, you can also download the font and pre-load it.*/
+@font-face {
+    font-family: 'MyRagnarokFont'; /*  for this one you can define your own name for the font that you embed or downloaded, or else you can just use the same name of the font.*/
+    src: url(./FONTS/CinzelDecorative-Bold.ttf); /* now this is the downloaded font where you can also put the embed version of it here but it has more properties so you can also customize those inside the embed code.*/
+}
+/* This part has the same explanation above.*/
+@font-face {
+    font-family: 'MyRagnarokFont2.0';
+    src: url(./FONTS/BLKCHCRY.TTF);
+}
+
+/* This is the body part that is gonna be applied for the whole website, but this font-family is only applied for the paragraph or p tag because I defined different fonts for h1 and h2.*/
+body {
+    margin: 10;
+    font-family: Arial;
+}
+
+/* This is the design and edits of the Video Background FOR HOMEPAGE only.*/
+.BgAsVideoForHomePage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%) contrast(1.1);
+    z-index: -1; 
+}  /* By the way, z-index is used to define the layers and positions of an element. An element with a higher value will always be prioritized in front of another element
+    but if the other element is lower than the other, it will automatically be positioned at the back of that higher element.
+    z-index only works if there is a position or display that is defined inside a CSS,  otherwise it wouldn't work.*/
+    
+
+/*Same explanation here, but this one is FOR ABOUT PAGE only.*/
+.BgAsVideoForAbout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%) contrast(1.0);
+    z-index: -1;
+}
+
+/*Same explanation here, but this one is FOR IMPACT PAGE only.*/
+.BgAsVideoForImpact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%) contrast(1.0);
+    z-index: -1;
+}
+/*This one is for my logo that is located at the homepage only at the top left-ish side.*/
+#Logo {
+    width: auto;
+    height: 70px;
+    display: block;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+/*This one is for the position of HOMEPAGE*/
+.HeaderForHome {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 85px;
+    padding: 20px;
+}
+
+/*This one is for the h1 tag of the HOMEPAGE.*/
+.HeaderForHome h1 {
+    font-family: 'MyRagnarokFont';
+    text-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.4);
+    color: white;
+    background: rgba(7, 6, 15, 0.85);
+    padding: 13px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #FFD166;
+}
+
+/*This one is for the h2 tag of the HOMEPAGE.*/
+.HeaderForHome h2 {
+    color: #FFD166;
+    background: rgba(27, 38, 59, 0.7);
+    margin-top: 12px;
+    padding: 8px 18px;
+    border: 2px solid #19D4FF;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0 0 6px rgba(255, 209, 102, 0.4);
+}
+
+/*This one is for the p tag of the HOMEPAGE.*/
+.HeaderForHome p {
+    color: white;
+    background: rgba(27, 38, 59, 0.5);
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: 1px solid #FF4D5A;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: large;
+}
+
+/*This one is for the position of the ABOUT page.*/
+.HeaderForAbout {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    margin-top: 85px;
+    padding: 20px;
+}
+
+/*This one is for the h1 tag of ABOUT page.*/
+.HeaderForAbout h1 {
+    font-family: 'MyRagnarokFont';
+    text-align: center;
+    text-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.4);
+    color: white;
+    margin-top: auto;
+    background: rgba(7, 6, 15, 0.85);
+    padding: 13px 20px;
+    display: inline-block;
+    border: 1px solid #FFD166;
+    border-radius: 10px;
+}
+
+/*This one is for the h2 tag of the ABOUT page.*/
+.HeaderForAbout h2 {
+    font-family: 'MyRagnarokFont2.0';
+    text-align: left;
+    text-shadow: 0 0 6px rgba(255, 209, 102, 0.4);
+    color: #FFD166;
+    background: rgba(27, 38, 59, 0.7);
+    margin-top: 12px;
+    padding: 8px 18px;
+    border: 2px solid #19D4FF;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/*This one is for the p tag of the ABOUT page.*/
+.HeaderForAbout p {
+    color: white;
+    text-align: left;
+    font-size: medium;
+    line-height: 2;
+    background: rgba(27, 38, 59, 0.5);
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: 1px solid #FF4D5A;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/*This one is for the h1 tag of the CLASSES page.*/
+.HeaderForClasses h1 {
+    font-family: 'MyRagnarokFont';
+    text-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.4);
+    color: white;
+    background: rgba(7, 6, 15, 0.85);
+    padding: 12px 15px;
+    margin-top: 32px;
+    display: inline-block;
+    border: 1px solid #FFD166;
+    border-radius: 10px;
+}
+
+/*This one is for the position of the GameClasses in the CLASSESOVERVIEW HTML.*/
+.GameClass {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(27, 38, 59, 0.85);
+    padding: 12px;
+    margin: 20px auto;
+    border: 2px solid #19D4FF;
+    border-radius: 10px;
+    box-shadow:0 0 12px rgba(255, 209, 102, 0.4);
+    max-width: 680px;
+}
+
+/*Same thing, this one is for the position of the GameClasses in the CLASSESOVERVIEW HTML.*/
+.GameClassOtherSide {
+    display: flex;
+    flex-direction: row-reverse; /*This one makes the picture and text appeared to be on the other side of the padding.*/
+    align-items: center;
+    gap: 20px;
+    background: rgba(27, 38, 59, 0.85);
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid #19D4FF;
+    border-radius: 10px;
+    box-shadow:0 0 12px rgba(255, 209, 102, 0.4);
+    max-width: 680px;
+}
+
+/*This is the dimensions and design of the images in the CLASSESOVERVIEW HTML.*/
+.ClassesPic {
+    width: 130px;
+    border:2px solid #FF4D5A;
+    border-radius: 10px;
+    box-shadow:0 0 8px rgba(255, 209, 102, 0.5);
+}
+/*This is the text layout for the description in CLASSES PAGE ONLY.*/
+.GameClassDesc {
+    color: white;
+    text-align: left;
+}
+
+/*This one is for the h2 tag of CLASSESOVERVIEW page.*/
+.GameClassDesc h2 {
+    font-family: 'MyRagnarokFont2.0';
+    color: #FFD166;
+    text-shadow: 0 0 8px rgba(255, 209, 102, 0.6);
+    margin-bottom: 10px;
+}
+
+/*This one is for the p tag of CLASSESOVERVIEW page.*/
+.GameClassDesc p{
+    color: #E0E0E0;
+}
+/*This one is for the position of the IMPACT page.*/
+.HeaderForImpact {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    margin-top: 85px;
+    padding: 20px;
+}
+
+/*This one is for the h1 tag of IMPACT page.*/
+.HeaderForImpact h1 {
+    font-family: 'MyRagnarokFont';
+    text-align: center;
+    text-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.4);
+    color: white;
+    background: rgba(7, 6, 15, 0.85);
+    padding: 13px 20px;
+    margin-top: auto;
+    display: inline-block;
+    border: 1px solid #FFD166;
+    border-radius: 10px;
+}
+
+/*This one is for the h2 tag of IMPACT page.*/
+.HeaderForImpact h2 {
+    font-family: 'MyRagnarokFont2.0';
+    text-align: left;
+    text-shadow: 0 0 6px rgba(255, 209, 102, 0.4);
+    color: #FFD166;
+    background: rgba(27, 38, 59, 0.7);
+    padding: 8px 18px;
+    margin-top: 12px;
+    display: inline-block;
+    border: 2px solid #19D4FF;
+    border-radius: 8px;
+}
+
+/*This one is for the p tag of IMPACT page.*/
+.HeaderForImpact p {
+    color: white;
+    text-align: left;
+    font-size: medium;
+    line-height: 2;
+    background: rgba(27, 38, 59, 0.5);
+    padding: 8px 16px;
+    margin-top: 12px;
+    display: inline-block;
+    border: 1px solid #FF4D5A;
+    border-radius: 8px;
+}
+
+/*This one is the position for the RATINGS page.*/
+.HeaderForRatings {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    margin-top: 85px;
+    padding: 20px;
+}
+
+/*This one is for the h1 tag of the RATINGS page.*/ 
+.HeaderForRatings h1 {
+    font-family: 'MyRagnarokFont';
+    text-align: center;
+    text-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.4);
+    color: white;
+    background: rgba(7, 6, 15, 0.85);
+    padding: 13px 20px;
+    margin-top: auto;
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #FFD166;
+}
+
+/*This one is for the h2 tag of the RATINGS page.*/
+.HeaderForRatings h2 {
+    font-family: 'MyRagnarokFont2.0';
+    text-align: left;
+    text-shadow: 0 0 6px rgba(255, 209, 102, 0.4);
+    color: #FFD166;
+    background: rgba(27, 38, 59, 0.7);
+    padding: 8px 18px;
+    margin-top: 12px;
+    display: inline-block;
+    border: 2px solid #19D4FF;
+    border-radius: 8px;
+}
+
+/*This one is for the li tag of the RATINGS page.*/
+.HeaderForRatings li {
+    color: white;
+    line-height: 1.5;
+}
+
+/*This one is the position for the REVIEWS page.*/
+.HeaderForReviews {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    margin-top: 85px;
+    padding: 20px;
+}
+
+/*This one is for the h1 tag of the REVIEWS page.*/
+.HeaderForReviews h1 {
+    font-family: 'MyRagnarokFont';
+    text-align: center;
+    text-shadow: 0 0 10px gold, 0 0 20px rgba(255, 215, 0, 0.4);
+    color: white;
+    background: rgba(7, 6, 15, 0.85);
+    padding: 13px 20px;
+    margin-top: auto;
+    display: inline-block;
+    border: 1px solid #FFD166;
+    border-radius: 10px;
+} 
+
+/*This one is for the h2 tag of the REVIEWS page.*/
+.HeaderForReviews h2 {
+    font-family: 'MyRagnarokFont2.0';
+    text-align: left;
+    text-shadow: 0 0 6px rgba(255, 209, 102, 0.4);
+    color: #FFD166;
+    background: rgba(27, 38, 59, 0.7);
+    padding: 8px 18px;
+    margin-top: 12px;
+    display: inline-block;
+    border: 2px solid #19D4FF;
+    border-radius: 8px;
+}
+
+/*This one is for the p tag of the REVIEWS page.*/
+.HeaderForReviews p {
+    color: white;
+    line-height: 1.5;
+}
+
+/*This one is for the li tag of the REVIEWS page.*/
+.HeaderForReviews li {
+    color: white;
+    line-height: 1.5;
+}
+
+/*This one is the design and position of my Navigation Bars.*/
+.MyNavBars {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+    background: rgba(12, 10, 28, 0.95);
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    border-bottom: 2px solid #FFD166;
+}
+
+/*This one is the fonts of my Navigation Bars.*/
+.MyNavBars a {
+    color: white;
+    text-decoration: none;
+    font-family: Georgia;
+    display: flex;
+    align-items: center;
+    padding: 20px 12px;
+    border-radius: 6px;
+    transition: 0.1s;
+}
+
+/*This one is for the hover effect of my Navigation Bars when they are hovered around.*/
+.MyNavBars a:hover {
+    color: #FFD166;
+    background: rgba(255, 209, 102, 0.15);
+    text-shadow: 0 0 8px #FFD166;
+    transform: scale(1.00);
+}
+
+/*This one is the transition or the show-up speed of the transition for my Navigation Bars.*/
+.MyNavBars a:active {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
